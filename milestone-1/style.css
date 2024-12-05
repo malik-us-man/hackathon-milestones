@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.resume-container {
+    display: flex;
+    max-width: 900px;
+    margin: 30px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.resume-container:hover {
+    transform: scale(1.02);
+}
+
+.left-section {
+    background-color: #2c3e53;
+    padding: 20px 30px;
+    width: 30%;
+    color: #ecf0f1;
+    text-align: center;
+}
+
+.profile-picture {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #020d15;
+}
+
+.left-section h3 {
+    font-size: 20px;
+    color: #feffff;
+    margin-bottom: 16px;
+    text-transform: uppercase;  
+}
+
+.left-section p {
+    font-size: 15px;
+    color: #fafbfc;
+    margin-bottom: 20px;
+    line-height: 1.8;            
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2); 
+    font-weight: 400;            
+    letter-spacing: 0.5px;       
+}
+
+.right-section {
+    background-color: rgb(250, 250, 246);
+    padding: 30px 25px;
+    width: 65%;
+    color: #333;
+}
+
+.right-section h1 {
+    font-size: 26px;
+    color: grey;
+    text-align: center;
+    margin-bottom: 35px;
+    font-weight: 800;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    transition: font-weight 0.3s ease, color 0.3s ease; 
+}
+
+.right-section h1:hover {
+    font-weight: 900;  
+    color: goldenrod;  
+}
+
+.right-section h3 {
+    font-size: 25px;
+    color: goldenrod;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-transform: uppercase; 
+    letter-spacing: 1px;       
+    transition: font-weight 0.3s ease, color 0.3s ease;
+}
+
+.right-section h3:hover {
+    font-weight: 900;  
+    color: darkorange;  
+}
+
+.right-section p {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.8;           /* Increased line-height for readability */
+    letter-spacing: 0.5px;
+}
+
+.right-section ul {
+    list-style-type: none;
+    padding-left: 0;
+    color: #555;
+}
+
+.right-section ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ecf0f1;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.right-section a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.right-section a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+#toggle-skills {
+    display: block;
+    width: 180px;
+    padding: 13px;
+    margin: 30px auto;
+    background-color: #010509;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.5s ease;
+}
+
+#toggle-skills:hover {
+    background-color: orange;
+}
+
+@media (max-width: 768px) {
+    .resume-container {
+        flex-direction: column;
+    }
+    .left-section, .right-section {
+        width: 100%;
+        padding: 20px;
+    }
+    #toggle-skills {
+        width: 100%;
+    }
+}
